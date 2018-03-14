@@ -14,31 +14,51 @@
 
 		<!-- Printing and PDF exports -->
 		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+		var link = document.createElement("link");
+link.rel = "stylesheet";
+link.type = "text/css";
+link.href = window.location.search.match(/print-pdf/gi)
+  ? "css/print/pdf.css"
+  : "css/print/paper.css";
+document.getElementsByTagName("head")[0].appendChild(link);
+</script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<section><h1>JavaScript</h1> <br/><img src="https://media.giphy.com/media/10bdAP4IOmoN7G/giphy.gif"/></section>
+					<section>
+						 <h2>A Brief History of... Everything</h2>
+						 <br/>
+						 <img src="https://media.giphy.com/media/3o6UBpHgaXFDNAuttm/giphy.gif"/></section>
 					<section data-markdown>
 					<textarea data-template>
-						## Page title
+						## What is?
 
-						A paragraph with some text and a [link](http://hakim.se).
+						The following is aimed as a source of knowledge gathered throughout my time as a Software Engineer.
+
+						This ranges from general programming principals, language syntax and other useful information.
 					</textarea>
 				</section>
-					<section>Inner Slide2</section>
+				<section data-markdown>
+					<textarea data-template>
+					## Presentation Structure
+
+					Each key topic will be seperated using left/right arrows with further information on a topic being available using up and down arrows.
+
+					As the presentation is an active work in progress this section will be updated over time.
+				</textarea>
 				</section>
+				</section>
+
 				<section>Slide 2</section>
+
 				<section>Slide 3</section>
+
 				<section>Slide 4</section>
+
 				<section>Slide 5</section>
+
 			</div>
 		</div>
 
@@ -46,17 +66,23 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
+		// More info about config & dependencies:
+// - https://github.com/hakimel/reveal.js#configuration
+// - https://github.com/hakimel/reveal.js#dependencies
+Reveal.initialize({
+  dependencies: [
+    { src: "plugin/markdown/marked.js" },
+    { src: "plugin/markdown/markdown.js" },
+    { src: "plugin/notes/notes.js", async: true },
+    {
+      src: "plugin/highlight/highlight.js",
+      async: true,
+      callback: function() {
+        hljs.initHighlightingOnLoad();
+      }
+    }
+  ]
+});
+</script>
 	</body>
 </html>
